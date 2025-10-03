@@ -1,20 +1,87 @@
+/* Fuente divertida de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
 body {
-    background-color: hsl(4, 100%, 50%);
-     padding: 16px;
+    background-color: #fef08a; /* Amarillo pollo */
+    font-family: 'Comic Neue', cursive;
+    color: #1e1e1e;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-hl {
-text-align: center;
-font-family: 'Times New Roman', Times, serif;
-font-size:42px;
-color:rgb(234, 255, 0);
+/* Título épico */
+h1 {
+    font-size: 4em;
+    color: #ff4d4d;
+    animation: girarLocamente 5s infinite linear;
+    text-shadow: 2px 2px 0px #000;
+    margin-top: 20px;
 }
+
+/* Subtítulo con dramatismo innecesario */
+h2 {
+    color: #00bcd4;
+    font-size: 2.5em;
+    transform: rotate(-2deg);
+    margin-bottom: 10px;
+}
+
+/* Lista con estilo de memes */
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.5em;
+}
+
+ul li::before {
+    content: "🚗💨 ";
+    animation: shake 0.5s infinite alternate;
+}
+
+/* Párrafo principal */
+p {
+    font-size: 1.8em;
+    color: #8e44ad;
+    background-color: #ffffffaa;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 #000;
+    margin: 20px auto;
+}
+
+/* Imagen con estilo legendario */
 .imagen_perfil {
-width: 300px;
-height: 300px;
-border-radius: 50%;
-
+    width: 80%;
+    max-width: 600px;
+    border: 10px dashed hotpink;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 0 0 20px 5px magenta;
+    transform: rotate(1deg);
+    transition: transform 0.3s ease;
 }
+
+.imagen_perfil:hover {
+    transform: rotate(360deg) scale(1.1);
+    transition: transform 1s ease-in-out;
+}
+
+/* Animaciones tontas */
+@keyframes girarLocamente {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0px); }
+    100% { transform: translateX(5px); }
+}
+
+
+
 
 
 
